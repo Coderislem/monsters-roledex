@@ -24,7 +24,7 @@ class App extends Component {
     const filterarray=Monsters.filter(Monsters=>Monsters.name.toLowerCase().includes(searchFealed.toLowerCase()));
     return (
       <div className="App">
-  
+     <h1>Monster roledex</h1>
 
       <Searchbox placeholder='search monster'  handchange={this.handchange} />
        {filterarray.length>0 && <CardList Monsters={filterarray} /> }
